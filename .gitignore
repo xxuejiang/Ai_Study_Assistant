@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+node_modules/
+dist/
+.vite/
+backend/data/app.db
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,14 @@
+# 后端运行依赖
+#
+# 说明：
+# 1. 使用基础版 uvicorn，避免额外安装 httptools、watchfiles 等原生扩展，降低安装失败概率。
+# 2. pydantic 使用较新的 2.x 版本范围，避免旧版 pydantic-core 在 Python 3.13 下触发 Rust / maturin 本地编译。
+# 3. 如果仍然遇到 pydantic-core 构建失败，优先执行：python -m pip install --upgrade pip setuptools wheel。
+
+fastapi>=0.115.12,<1.0.0
+uvicorn>=0.34.0,<1.0.0
+pydantic>=2.11.0,<3.0.0
+python-multipart>=0.0.20,<1.0.0
+requests>=2.32.3,<3.0.0
+pypdf>=5.4.0,<7.0.0
+python-docx>=1.1.2,<2.0.0

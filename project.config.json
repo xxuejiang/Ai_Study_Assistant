@@ -1,0 +1,35 @@
+{
+  "backend": {
+    "host": "127.0.0.1",
+    "port": 8010,
+    "apiPrefix": "/api"
+  },
+  "frontend": {
+    "host": "127.0.0.1",
+    "port": 5183,
+    "previewPort": 4183
+  },
+  "ollama": {
+    "scheme": "http",
+    "host": "127.0.0.1",
+    "port": 11434,
+    "apiPrefix": "/api"
+  },
+  "models": {
+    "default": "qwen2.5:0.5b",
+    "recommended": [
+      "qwen2.5:0.5b",
+      "qwen2.5:1.5b",
+      "qwen2.5:3b",
+      "qwen3:0.6b",
+      "qwen3:1.7b",
+      "qwen3.5:4b"
+    ]
+  },
+  "rag": {
+    "topK": 3,
+    "chunkSize": 800,
+    "chunkOverlap": 120,
+    "maxContextChars": 3000
+  }
+}
